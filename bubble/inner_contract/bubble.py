@@ -32,11 +32,11 @@ from bubble.inner_contract import (
 class Bubble(InnerContract):
     ADDRESS = '0x2000000000000000000000000000000000000002'
 
-    def select_bubble(self):
+    def select_bubble(self, size: int):
         """
         create a bubble chain.
         """
-        return self.function(InnerFunction.bubble_selectBubble)
+        return self.function(InnerFunction.bubble_selectBubble, size=size)
 
     def get_bubble_info(self, bubble_id: int):
         """

@@ -60,7 +60,7 @@ with open("./README.md") as readme:
 setup(
     name="bubble-sdk",
     # *IMPORTANT*: Don't manually change the version here. Use the 'bumpversion' utility.
-    version="2.1.6",
+    version="2.1.7",
     description="""Bubble sdk""",
     long_description_content_type="text/markdown",
     long_description=long_description,
